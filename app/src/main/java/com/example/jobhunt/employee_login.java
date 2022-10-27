@@ -13,8 +13,8 @@ public class employee_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_login);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView btn=findViewById(R.id.textViewSignUp);
-        btn.setOnClickListener(v->{
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView btnToSignUp=findViewById(R.id.textViewSignUp);
+        btnToSignUp.setOnClickListener(v->{
             Intent in=new Intent(this, sign_up_employee.class);
             startActivity(in);
         });
