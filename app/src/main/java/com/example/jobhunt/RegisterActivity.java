@@ -19,11 +19,15 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registered);
         Button button=findViewById(R.id.button);
+
+
+        //when btn click go to dialog box with layout popup.xml
         button.setOnClickListener(c->{
             createNewDialog();
         });
 
     }
+    //code for dialog box/popup containing 2 buttons employee and employer
     public void createNewDialog(){
         dialogBuilder =new AlertDialog.Builder(this);
         final View choosePopUp = getLayoutInflater().inflate(R.layout.popup,null);
