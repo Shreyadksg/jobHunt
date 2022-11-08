@@ -19,9 +19,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class employee_login extends AppCompatActivity {
 
+
     TextView btn;
-    EditText inputPassword,inputEmail;
-    Button btnToLoginIn;
+    EditText inputPassword, inputEmail;
+    Button btnToLog;
     private FirebaseAuth mAuth;
     private ProgressDialog mLoadingBar;
 
@@ -29,51 +30,47 @@ public class employee_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee_login);
-        btn=findViewById(R.id.signUpBtn);
-        inputEmail=findViewById(R.id.editTextEmailAddress);
-        inputPassword=findViewById(R.id.editTextPassword);
-
-        mAuth= FirebaseAuth.getInstance();
-        mLoadingBar=new ProgressDialog(employee_login.this);
-
-        btnToLoginIn=findViewById(R.id.LoginBtn);
-        btnToLoginIn.setOnClickListener((v)->{checkCredentials();});
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView btnToLoginIn=findViewById(R.id.textViewLogin);
-        btnToLoginIn.setOnClickListener(v->{
-            Intent in1 =new Intent(this,employee_login.class);
-            startActivity(in1);
+        btn = findViewById(R.id.LoginBtn);
+        inputEmail = findViewById(R.id.editTextEmailAddress);
+        inputPassword = findViewById(R.id.editTextPassword);
+        btnToLog = findViewById(R.id.LoginBtn);
+        mAuth = FirebaseAuth.getInstance();
+        mLoadingBar = new ProgressDialog(employee_login.this);
+        btnToLog.setOnClickListener((v) -> {
+            checkCredentials();
+        });
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) TextView btnToLoginIn = findViewById(R.id.textViewSignUp);
+        btnToLoginIn.setOnClickListener(v -> {
+            Intent in = new Intent(this, sign_up_employee.class);
+            startActivity(in);
         });
     }
-    private void checkCredentials(){
-        String email=inputEmail.getText().toString();
-        String password=inputPassword.getText().toString();
 
-        if(email.isEmpty()||!email.contains("@"))
-        {
-            showError(inputEmail,"Email is not valid");
-        }
-        else if(password.isEmpty()||password.length()<7)
-        {
-            showError(inputPassword,"Password must be 7 characters");
-        }
-        else
-        {
+    private void checkCredentials() {
+        String email = inputEmail.getText().toString();
+        String password = inputPassword.getText().toString();
+
+        if (email.isEmpty() || !email.contains("@")) {
+            showError(inputEmail, "Email is not valid");
+        } else if (password.isEmpty() || password.length() < 7) {
+            showError(inputPassword, "Password must be 7 characters");
+        } else {
             mLoadingBar.setTitle("Login");
             mLoadingBar.setMessage("Please wait");
             mLoadingBar.setCanceledOnTouchOutside(false);
             mLoadingBar.show();
 
-            mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
+                        Toast.makeText(employee_login.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
                         mLoadingBar.dismiss();
                         Intent intent = new Intent(employee_login.this, MainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 
-                    }
-                    else {
+                    } else {
                         Toast.makeText(employee_login.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                     }
                 }

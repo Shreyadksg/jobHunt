@@ -51,9 +51,9 @@ public class sign_up_employee extends AppCompatActivity {
         String password=inputPassword.getText().toString();
         String confirmpassword=inputConfirmpassword.getText().toString();
 
-        if(username.isEmpty() || username.length()<7)
+        if(username.isEmpty() || username.length()<5)
         {
-            showError(inputUsername,"Your username is not valid");
+            showError(inputUsername,"Your username is not valid,should be more than 5 letters");
         }
         else if(email.isEmpty()||!email.contains("@"))
         {
