@@ -46,6 +46,7 @@ public class profileEmployee extends AppCompatActivity {
                 userhelper helper = new userhelper(ename, eabout, euni, eresume, econtact);
                 reference.child(econtact).setValue(helper);
                 Intent intent =new Intent(profileEmployee.this,showAllJobPostsActivity.class);
+                startActivity(intent);
             }
         });
 
