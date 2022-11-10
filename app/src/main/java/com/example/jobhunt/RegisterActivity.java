@@ -39,5 +39,9 @@ public class RegisterActivity extends AppCompatActivity {
             Intent intent1=new Intent(this,employee_login.class);
             startActivity(intent1);
         });
+        employer.setOnClickListener(v->{
+            Intent intent=new Intent(this,employer_login.class);
+            startActivity(intent);
+        });
     }
 }

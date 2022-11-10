@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "1018658259783",
-    "project_id": "jobhunt-600ab",
-    "storage_bucket": "jobhunt-600ab.appspot.com"
+    "project_number": "887976447644",
+    "firebase_url": "https://jobhunt-538e5-default-rtdb.firebaseio.com",
+    "project_id": "jobhunt-538e5",
+    "storage_bucket": "jobhunt-538e5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1018658259783:android:ca088717c8ca54b9e98262",
+        "mobilesdk_app_id": "1:887976447644:android:3b4c3edbb13db8bc8a6759",
         "android_client_info": {
-          "package_name": "com.example.jobhunt"
+          "package_name": "com.company.jobhunt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1018658259783-hcoahv5rgpp4cpjp1ntvpnln73l8u3hj.apps.googleusercontent.com",
+          "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD5sRg41J1sAK4xOkFgdqtLoj-n8ZWatLY"
+          "current_key": "AIzaSyD7q7j1560PTykVRaob1o_U0vPBwd2f2ec"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1018658259783-hcoahv5rgpp4cpjp1ntvpnln73l8u3hj.apps.googleusercontent.com",
+              "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -36,27 +37,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1018658259783:android:d3687b9aec0265afe98262",
+        "mobilesdk_app_id": "1:887976447644:android:67dd19beed7691088a6759",
         "android_client_info": {
-          "package_name": "com.example.jobhuntStar"
+          "package_name": "com.example.jobhunt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1018658259783-hcoahv5rgpp4cpjp1ntvpnln73l8u3hj.apps.googleusercontent.com",
+          "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD5sRg41J1sAK4xOkFgdqtLoj-n8ZWatLY"
+          "current_key": "AIzaSyD7q7j1560PTykVRaob1o_U0vPBwd2f2ec"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1018658259783-hcoahv5rgpp4cpjp1ntvpnln73l8u3hj.apps.googleusercontent.com",
+              "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
