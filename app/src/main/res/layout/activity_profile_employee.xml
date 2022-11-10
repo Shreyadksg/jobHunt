@@ -34,14 +34,10 @@
         android:layout_marginTop="20dp">
 
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
 
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Name">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <EditText
                 android:layout_width="match_parent"
                 android:id="@+id/NameEditTextProfile"
                 android:layout_height="wrap_content"
@@ -49,34 +45,27 @@
                 android:maxLines="10"
                 android:scrollbars="vertical"
                 android:inputType="text"
+                android:hint="Name"
 />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
 
-            android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="About Me">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/AboutMeEditTxtProfile"
-                android:inputType="textMultiLine"
+                android:inputType="text"
                 android:lines="8"
                 android:maxLines="10"
+
                 android:scrollbars="vertical"
+                android:hint="About Me"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
 
-            android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="University">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/UniversityEdtTxtProfile"
@@ -84,17 +73,13 @@
                 android:lines="8"
                 android:maxLines="10"
                 android:scrollbars="vertical"
+                android:hint="University"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
 
-            android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Resume Link">
 
-            <com.google.android.material.textfield.TextInputEditText
+
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ResumeEdtTxtProfile"
@@ -102,16 +87,11 @@
                 android:lines="8"
                 android:maxLines="10"
                 android:scrollbars="vertical"
+                android:hint="Resume Link"
                 />
-        </com.google.android.material.textfield.TextInputLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
 
-            android:layout_height="wrap_content"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:hint="Contact">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ContactEdtTxtProfile"
@@ -120,9 +100,10 @@
                 android:maxLines="10"
                 android:scrollbars="vertical"
                 android:inputType="text"
+                android:hint="Contact"
                 />
 
-        </com.google.android.material.textfield.TextInputLayout>
+
 
 
 

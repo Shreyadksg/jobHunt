@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grad"
+        android:id="@+id/list_root"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Title ..."
+        android:padding="5dp"
+        android:background="#231B1B"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:id="@+id/jobTitleText"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="29 October, 2021"
+        android:padding="5dp"
+        android:id="@+id/dataText"
+        />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="5dp"
+            android:maxLines="10"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/jobDescriptionText"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skills"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:maxLines="10"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:id="@+id/skillsRequiredText"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/salaryText"
+            />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

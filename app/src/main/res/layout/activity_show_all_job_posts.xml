@@ -8,8 +8,9 @@
     android:id="@+id/drawerLayout"
     android:background="@drawable/piu2"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start"
+
     tools:context=".showAllJobPostsActivity">
+
     <include layout="@layout/app_bar_navigation_drawer"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -22,6 +23,8 @@
         android:id="@+id/navigation_drawer"
         app:headerLayout="@layout/profile_data"
         app:menu="@menu/navigation_items"/>
+
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

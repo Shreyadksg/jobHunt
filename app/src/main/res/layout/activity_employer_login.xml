@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".employer_login"
+    android:orientation="vertical"
     android:backgroundTint="@color/black"
-    android:padding="20dp"
-    tools:context=".employee_login">
+    android:padding="20dp">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,9 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="156dp"
                 android:layout_height="79dp"
                 android:text="Login"
@@ -27,19 +24,19 @@
                 android:textColor="#020202"
                 android:textSize="50sp"
                 android:textStyle="bold"
-                android:layout_margin="50dp"/>
+                android:layout_margin="50dp"
+                />
             <TextView
-                android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:paddingLeft="32dp"
                 android:text="EMAIL"
                 android:textStyle="bold"
-                 />
-
+                />
             <EditText
-                android:id="@+id/editTextEmailAddress"
+
+
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
@@ -51,23 +48,21 @@
                 android:drawableLeft="@drawable/ic_email"
                 android:drawablePadding="10dp"
                 android:ems="10"
-
+                android:id="@+id/emailEmployerLoginEdtTxt"
                 android:layout_marginBottom="10dp"
                 android:inputType="textEmailAddress"
-                />
-
+/>
             <TextView
-                android:id="@+id/textView6"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PASSWORD"
                 android:textStyle="bold"
                 android:layout_marginLeft="32dp"
                 android:gravity="center"
-                 />
-
+                />
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/editTextPasswordEmployerLogin"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginLeft="32dp"
@@ -80,21 +75,9 @@
                 android:drawablePadding="10dp"
                 android:ems="10"
                 android:inputType="textPassword"
-                 />
-
-
-            <TextView
-                android:id="@+id/ForgotPasswordTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="right"
-                android:layout_marginEnd="32dp"
-                android:text="Forgot password"
-                android:textStyle="bold" />
-
+                />
             <Button
-                android:id="@+id/LoginBtn"
+                android:id="@+id/EmployerLoginBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -102,10 +85,9 @@
                 android:backgroundTint="@color/black"
                 android:layout_marginBottom="10dp"
                 android:text="login"
-                 />
-
+                />
             <LinearLayout
-                android:id="@+id/linearLayout"
+                android:id="@+id/linearLayoutEmployer"
                 android:layout_width="275dp"
                 android:layout_height="33dp"
                 android:gravity="center"
@@ -120,46 +102,12 @@
                     android:textColor="@color/black"></TextView>
 
                 <TextView
-                    android:id="@+id/textViewSignUp"
+                    android:id="@+id/textViewSignUpEmployer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SignUp"
                     android:textColor="@color/purple_200"></TextView>
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/LoginByFacebook"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginRight="10dp"
-                    android:backgroundTint="@color/white"
-                    android:drawableLeft="@drawable/facebook"
-                    android:text="Facebook"
-                    android:textColor="@color/black"
-
-                     />
-
-                <Button
-                    android:id="@+id/LoginByGoogle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:layout_gravity="right"
-                   android:layout_marginLeft="10dp"
-                    android:drawableLeft="@drawable/google"
-                    android:text="Google"
-                    android:textColor="@color/black"
-                   />
-
-            </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
