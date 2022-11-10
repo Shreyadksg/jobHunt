@@ -12,12 +12,7 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 public class MainAdapter extends FirebaseRecyclerAdapter<Data,MainAdapter.MyViewHolder>{
-    /**
-     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
-     * {@link FirebaseRecyclerOptions} for configuration options.
-     *
-     * @param options
-     */
+
     public MainAdapter(@NonNull FirebaseRecyclerOptions<Data> options) {
         super(options);
     }
@@ -38,12 +33,12 @@ public class MainAdapter extends FirebaseRecyclerAdapter<Data,MainAdapter.MyView
         return new MyViewHolder(view);
 
     }
-    class MyViewHolder extends RecyclerView.ViewHolder{
+    public class MyViewHolder extends RecyclerView.ViewHolder{
         TextView data,id, jobDescription, jobTitle, salary, skillsRequired;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            data=(TextView) itemView.findViewById(R.id.jobTitleText);
+            data=(TextView) itemView.findViewById(R.id.dataText);
             jobDescription=(TextView) itemView.findViewById(R.id.jobDescriptionText);
             jobTitle=(TextView) itemView.findViewById(R.id.jobTitleText);
             salary=(TextView) itemView.findViewById(R.id.salaryText);
