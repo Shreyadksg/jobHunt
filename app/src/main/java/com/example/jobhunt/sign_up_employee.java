@@ -1,5 +1,7 @@
 package com.example.jobhunt;
 
+import static android.provider.Telephony.Carriers.PASSWORD;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +18,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.concurrent.atomic.AtomicMarkableReference;
 
 public class sign_up_employee extends AppCompatActivity {
 
@@ -80,6 +84,8 @@ public class sign_up_employee extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(sign_up_employee.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
+
+
                         Intent intent = new Intent(sign_up_employee.this, showAllJobPostsActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);

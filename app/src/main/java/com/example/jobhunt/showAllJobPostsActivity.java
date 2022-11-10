@@ -59,9 +59,9 @@ public class showAllJobPostsActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id=item.getItemId();
-                if(id==R.id.ViewProfile){
-                        Intent intent=new Intent(showAllJobPostsActivity.this,profileEmployee.class);
-                        startActivity(intent);
+                if(id==R.id.ViewProfile) {
+                    Intent intent=new Intent(showAllJobPostsActivity.this,profileEmployee.class);
+                    startActivity(intent);
                 }
                 else if(id==R.id.Notifications){
                     loadFragment(new AFragment());
@@ -70,8 +70,18 @@ public class showAllJobPostsActivity extends AppCompatActivity {
                 {
                     Toast.makeText(showAllJobPostsActivity.this,"No Bookmarks", Toast.LENGTH_SHORT).show();
                 }
+                else if(id == R.id.image)
+                {
+                    Intent intent=new Intent(showAllJobPostsActivity.this,image.class);
+                    startActivity(intent);
+                }
+
+
                 else{
-                    Toast.makeText(showAllJobPostsActivity.this,"No Bookmarks", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(showAllJobPostsActivity.this,RegisterActivity.class);
+                    startActivity(intent);
+                    finish();
+                    Toast.makeText(showAllJobPostsActivity.this,"Successfully Logout",Toast.LENGTH_SHORT).show();
                 }
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
