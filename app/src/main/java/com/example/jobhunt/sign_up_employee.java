@@ -80,7 +80,7 @@ public class sign_up_employee extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(sign_up_employee.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(sign_up_employee.this, MainActivity.class);
+                        Intent intent = new Intent(sign_up_employee.this, showAllJobPostsActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                     }
