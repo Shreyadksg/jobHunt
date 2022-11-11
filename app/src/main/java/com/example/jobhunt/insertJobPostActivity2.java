@@ -89,3 +89,12 @@ public class insertJobPostActivity2 extends AppCompatActivity {
         });
     }
     }
+
+    /*<activity
+            android:name=".postJobActivity"
+                    android:exported="false">
+<meta-data
+        android:name="android.app.lib_name"
+        android:value="" />
+</activity>
+*/

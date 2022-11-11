@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="176dp"
+    xmlns:tools="http://schemas.android.com/tools"
     android:padding="10dp"
     android:background="@color/teal_200"
     android:orientation="vertical"
-    android:gravity="bottom"
-    >
+    android:gravity="bottom">
     <ImageView
         android:layout_width="60dp"
         android:layout_height="60dp"
@@ -14,6 +14,7 @@
         android:id="@+id/profileImage"
         android:src="@drawable/google"
         android:contentDescription="profile Image"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
