@@ -50,8 +50,15 @@ public class postJobActivity extends AppCompatActivity {
                 {
 
                 }
+                else if(id==R.id.image){
+                    Intent intent=new Intent(postJobActivity.this,image.class);
+                    startActivity(intent);
+                }
                 else{
-
+                    Intent intent = new Intent(postJobActivity.this,RegisterActivity.class);
+                    startActivity(intent);
+                    finish();
+                    Toast.makeText(postJobActivity.this,"Successfully Logout",Toast.LENGTH_SHORT).show();
                 }
                 drawerLayoutJobPost2.closeDrawer(GravityCompat.START);
                 return true;
