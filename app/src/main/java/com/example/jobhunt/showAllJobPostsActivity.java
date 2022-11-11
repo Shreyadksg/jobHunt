@@ -90,7 +90,7 @@ public class showAllJobPostsActivity extends AppCompatActivity {
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,drawerLayout,app_bar_custom_toolbar,R.string.openDrawer,R.string.CloseDrawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-    loadFragment(new AFragment());
+    loadFragment(new BFragment());
         //when clicking on options in navigation drawer
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

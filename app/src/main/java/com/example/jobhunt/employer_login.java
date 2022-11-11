@@ -63,7 +63,7 @@ public class employer_login extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         Toast.makeText(employer_login.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
                         mLoadingBar.dismiss();
-                        Intent intent = new Intent(employer_login.this, showAllJobPostsActivity.class);
+                        Intent intent = new Intent(employer_login.this, postJobActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
 

@@ -3,41 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/wrapper"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view_job_post"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:visibility="visible"
-                android:baselineAligned="false">
-
-            </androidx.recyclerview.widget.RecyclerView>
-        </LinearLayout>
-
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
+            android:background="@color/black"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="10dp"
+            android:text="Show All Job Posts"
+            android:id="@+id/showAllJobsBtn"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="25dp"
-            android:id="@+id/add_job_btn"
-            app:fabSize="normal"
-            android:src="@drawable/ic_add_job"
-            android:backgroundTint="#C71585"
-            ></com.google.android.material.floatingactionbutton.FloatingActionButton>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:textColor="@color/white"
+            android:text="Post Job"
+            android:id="@+id/postJobBtn"
+            android:background="@color/black"
+            />
+    </LinearLayout>
+
 
 
 </FrameLayout>
