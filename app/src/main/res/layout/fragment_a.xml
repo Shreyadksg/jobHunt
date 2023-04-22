@@ -10,32 +10,31 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-        <androidx.appcompat.widget.AppCompatButton
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:layout_marginRight="32dp"
-            android:layout_marginTop="300dp"
-            android:layout_marginLeft="32dp"
-            android:layout_marginBottom="10dp"
-            android:text="Show All Job Posts"
-            android:id="@+id/showAllJobsBtn"
-            android:textColor="@color/white"
-            />
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="32dp"
-            android:layout_marginLeft="32dp"
-            android:textColor="@color/white"
-            android:text="Post Job"
-            android:id="@+id/postJobBtn"
-            android:background="@color/black"
-            />
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_view_fragment_a"
+            tools:listitem="@layout/main_item"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
     </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="25dp"
+        android:id="@+id/add_job_btn_Employer2"
+        android:src="@drawable/ic_add"
+        android:backgroundTint="#C71585"
+        android:text="add"
+        />
 
 
 

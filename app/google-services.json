@@ -1,63 +1,33 @@
 {
   "project_info": {
-    "project_number": "887976447644",
-    "firebase_url": "https://jobhunt-538e5-default-rtdb.firebaseio.com",
-    "project_id": "jobhunt-538e5",
-    "storage_bucket": "jobhunt-538e5.appspot.com"
+    "project_number": "315176357099",
+    "project_id": "hope-7178a",
+    "storage_bucket": "hope-7178a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:887976447644:android:3b4c3edbb13db8bc8a6759",
-        "android_client_info": {
-          "package_name": "com.company.jobhunt"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD7q7j1560PTykVRaob1o_U0vPBwd2f2ec"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:887976447644:android:67dd19beed7691088a6759",
+        "mobilesdk_app_id": "1:315176357099:android:0e35f4cd5c5530d0d682ae",
         "android_client_info": {
           "package_name": "com.example.jobhunt"
         }
       },
       "oauth_client": [
         {
-          "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
+          "client_id": "315176357099-pp8iemu413ok76ab6vmlu1m77esvbsik.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD7q7j1560PTykVRaob1o_U0vPBwd2f2ec"
+          "current_key": "AIzaSyCcdBMcj75mS6snUpnh_r3ZCMtZMKOl3xI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "887976447644-jdgp3lcp8dq4i702cte0isd00k6p66d7.apps.googleusercontent.com",
+              "client_id": "315176357099-pp8iemu413ok76ab6vmlu1m77esvbsik.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
