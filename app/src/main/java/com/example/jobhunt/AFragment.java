@@ -50,6 +50,7 @@ public class AFragment extends Fragment {
         add_job_btn=view.findViewById(R.id.add_job_btn_Employer2);
         mAuth=FirebaseAuth.getInstance();
         recycler_view_fragment_a=(RecyclerView) view.findViewById(R.id.recycler_view_fragment_a);
+        recycler_view_fragment_a.setItemAnimator(null);
         DatabaseReference refer= FirebaseDatabase.getInstance().getReference().child("Job post").child(mAuth.getUid());
         add_job_btn.setOnClickListener(v->{
             startActivity(new Intent(getContext(),insertJobPostActivity2.class));
