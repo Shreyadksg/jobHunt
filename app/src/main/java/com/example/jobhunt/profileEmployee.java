@@ -1,5 +1,6 @@
 package com.example.jobhunt;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,16 +11,19 @@ import android.widget.EditText;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class profileEmployee extends AppCompatActivity {
 
-    EditText name,about,uni,resume,contact;
+    EditText name,about,uni,resume,contact,image;
     Button submitprofileData;
     FirebaseDatabase rootNode;
     DatabaseReference reference;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,9 +47,10 @@ public class profileEmployee extends AppCompatActivity {
                 String euni = uni.getText().toString();
                 String eresume = resume.getText().toString();
                 String econtact = contact.getText().toString();
-                userhelper helper = new userhelper(ename, eabout, euni, eresume, econtact);
-                reference.child(econtact).setValue(helper);
-                Intent intent =new Intent(profileEmployee.this,showAllJobPostsActivity.class);
+                String imagei="";
+                userhelper helper = new userhelper(ename, eabout, euni, eresume, econtact,imagei);
+                reference.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(helper);
+                Intent intent =new Intent(profileEmployee.this,postJobActivity.class);
                 startActivity(intent);
             }
         });

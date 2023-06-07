@@ -10,9 +10,9 @@
         >
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/app_custom_toolbar"
-        android:background="@color/teal_700"
+        android:background="@color/blue_200"
         />
     </com.google.android.material.appbar.AppBarLayout>
         />
