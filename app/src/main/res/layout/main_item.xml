@@ -6,6 +6,7 @@
     app:cardElevation="5dp"
     android:elevation="5dp"
     android:layout_margin="5dp"
+
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,45 +33,116 @@
         android:id="@+id/dataText"
         />
 
-
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Description"
-            android:padding="5dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:layout_margin="5dp"
-            android:maxLines="10"
-            android:fontFamily="sans-serif-condensed"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:id="@+id/jobDescriptionText"/>
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/description"
+                />
+
+            <TextView
+                android:id="@+id/jobDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:text="Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black" />
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Skills"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:maxLines="10"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:fontFamily="sans-serif-condensed"
-        android:textColor="@color/black"
-        android:id="@+id/skillsRequiredText"
-        />
-        <TextView
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Salary"
-            android:layout_gravity="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/skills"
+                />
+
+            <TextView
+                android:id="@+id/skillsRequiredText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:text="Skills"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_margin="12dp"
+                android:src="@drawable/money"
+                />
+
+            <TextView
+                android:id="@+id/salaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:text="Salary"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                />
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B8ECF3"
+            android:text="See Applicants"
             android:textColor="@color/black"
-            android:padding="5dp"
-            android:layout_margin="5dp"
-            android:fontFamily="sans-serif-condensed"
-            android:id="@+id/salaryText"
             />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
