@@ -62,4 +62,30 @@ public class Data {
     public void setSkillsRequired(String skillsRequired) {
         this.skillsRequired = skillsRequired;
     }
+
+    public static class JobApplication{
+        public String name;
+        public String email;
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public JobApplication(String name, String email){
+            this.email=email;
+            this.name=name;
+
+        }
+        public String getName() {
+            return name;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+    }
 }

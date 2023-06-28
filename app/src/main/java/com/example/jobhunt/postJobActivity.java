@@ -195,6 +195,7 @@ public class postJobActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_LONG).show();
         }
     }
+    //Connect application to firebase storage to store profile photo
     private void uploadImageToFirebaseStorage(Uri imageUri,String uid)
     {
         String filename= UUID.randomUUID().toString();
