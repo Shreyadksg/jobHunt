@@ -37,9 +37,9 @@ public class showAllJobPost2 extends AppCompatActivity {
                 new FirebaseRecyclerOptions.Builder<Data>()
                         .setQuery(Refer2,Data.class )
                         .build();
-        adapter2=new MainAdapter(options);
-        recycler_view_all_jobs.setLayoutManager(new LinearLayoutManager(this));
-        recycler_view_all_jobs.setAdapter(adapter2);
+        //adapter2=new MainAdapter(options, recyclerViewInterface);
+        //recycler_view_all_jobs.setLayoutManager(new LinearLayoutManager(this));
+        //recycler_view_all_jobs.setAdapter(adapter2);
     }
     @Override
     protected void onStart() {

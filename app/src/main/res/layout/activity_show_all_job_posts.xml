@@ -8,7 +8,6 @@
     android:id="@+id/drawerLayout"
     android:background="@drawable/piu2"
     android:fitsSystemWindows="true"
-
     tools:context=".showAllJobPostsActivity">
 
     <include layout="@layout/app_bar_navigation_drawer"

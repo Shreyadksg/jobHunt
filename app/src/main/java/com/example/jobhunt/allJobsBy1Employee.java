@@ -43,8 +43,8 @@ public class allJobsBy1Employee extends AppCompatActivity {
                 new FirebaseRecyclerOptions.Builder<Data>()
                         .setQuery(refer, Data.class)
                         .build();
-        adapter2=new MainAdapter(options);
-        recycler_view_job_post_by_1_employer.setAdapter(adapter2);
+        //adapter2=new MainAdapter(options, recyclerViewInterface);
+        //recycler_view_job_post_by_1_employer.setAdapter(adapter2);
     }
     @Override
     protected void onStart() {
